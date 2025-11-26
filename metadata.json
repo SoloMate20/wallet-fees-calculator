@@ -1,0 +1,5 @@
+{
+  "name": "Nummus Wallet Fee Calculator",
+  "description": "Interactive fee and interest calculator for Nummus Wallet banking plans with comparative analysis and export features.",
+  "requestFramePermissions": []
+}

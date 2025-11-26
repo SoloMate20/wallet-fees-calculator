@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nummus Wallet Fee Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              navy: {
+                900: '#112322', // Brand Deep Green (Background)
+                800: '#1E1F1F', // Brand Black (Cards/Surfaces)
+                700: '#2C3A39', // Dark Green Accent/Border
+              },
+              brand: {
+                primary: '#00A79D', // Main Turquoise (Pro Plan)
+                secondary: '#68ACA8', // Lighter Turquoise/Silver (Virtual Plan)
+                accent: '#F0C556', // Gold (Premium Plan)
+                surface: '#EDEFF3', // Light Grey (Text/Surface)
+              },
+              text: {
+                main: '#FFFFFF',
+                muted: '#B0B0B0', // Muted Grey
+              }
+            },
+            keyframes: {
+              'bounce-subtle': {
+                '0%, 100%': { transform: 'translateY(-3%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+              }
+            },
+            animation: {
+              'bounce-subtle': 'bounce-subtle 2s infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #112322;
+        color: white;
+      }
+      /* Custom Scrollbar for sleek look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #112322; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1E1F1F; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00A79D; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
